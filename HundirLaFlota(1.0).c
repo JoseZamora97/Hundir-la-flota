@@ -1,4 +1,4 @@
-//====   TRABAJO FINAL DE PROGRAMACI覰:   ===================================================================================================================================================================
+//===========================================================================================================================================================================================================
 //===========================================================================================================================================================================================================
 //==============                                                                                                                                                                  ===========================
 //============   HHH   HHH  UUU   UUU  NNNN     NNN  DDDDDDDDD   III  RRRRRRRRR        LLLL         AAAAAAAAA       FFFFFFFFFF  LLL          OOOOOOOOOO   TTTTTTTTTTT   AAAAAAAAA   =========================
@@ -55,7 +55,7 @@ int comprobador_de_matriz_ia ( int fila, int columna, char m[12][12], char orien
 // Para camprobar la tirada en el juego.
 int comprobador_de_tirada ( int fila, int columna, char a[12][12], char jugada[12][12] );
 
-// Para comprobar si ha puesto RECORD de puntuaci髇.
+// Para comprobar si ha puesto RECORD de puntuaci贸n.
 void comp_hscore ( long int );
 void carga_hscore();
 
@@ -128,7 +128,7 @@ menu_principal();
 }
 void historia(){
 	
-    printf("A駉: 2065.\n\n Durante centenares de siglos el ser humano ha intentado contactar con vida extraterrestre, enviando mensajes a traves de ondas hacia el espacio esperando ser escuchadas.\n\n");
+    printf("A帽o: 2065.\n\n Durante centenares de siglos el ser humano ha intentado contactar con vida extraterrestre, enviando mensajes a traves de ondas hacia el espacio esperando ser escuchadas.\n\n");
 	printf(" Lamentablemente nuestras ondas fueron escuchadas por una alianza extraterrestre hostil ''Los Katch-Aclan'', quienes mal interpretando las ondas terrestres deciden declarar la guerra a la raza humana.\n\n");
 	printf(" Es entonces cuando las Organizaciones Mundiales intentan hacer un pacto mutuo, pero que, al ser rechazado por los Katch-Aclan deciden llamar a los estrategas mas experimentados de la tierra.\n ");
 	printf("\n\nCon el fin de HUNDIR SU FLOTA!!! \n\n");
@@ -234,7 +234,7 @@ void instrucciones(){
 	printf(" -Los simbolos de suma (+), representan las ondas que generan los barcos en a su alrededor, por lo que no podras colocar barcos en dichas zonas.\n\n");
 	printf(" Posteriormente comenzara la batalla y jugaras lanzando ataques seleccionando coordenadas.\n");
 	printf(" Dichas coordenadas se colocaran en el tablero de dos formas: \n  -La primera sera en forma de O(agua), indicando que has fallado.\n");
-	printf("  -La segunda en forma de X, que indicara que has acertado en el ataque y por consiguiente jugar醩 de nuevo-\n");
+	printf("  -La segunda en forma de X, que indicara que has acertado en el ataque y por consiguiente jugar谩s de nuevo-\n");
 	printf(" La partida acaba si destruyes los 10 barcos enemigos o, si pierdes los tuyos.\n");
 	printf("Y ahora.... A JUGAR!!!\n");
 	
@@ -242,7 +242,7 @@ void instrucciones(){
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------     Funciones modificadoras de Matrices y de comprobaci髇.    ------------------------------------------------------------------------------------
+-------------------------------------------------------------     Funciones modificadoras de Matrices y de comprobaci贸n.    ------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 // Funcion que inicializa las matrices
@@ -1141,7 +1141,7 @@ int comprobador_de_repeticion ( int fila, int columna, char m[12][12], char orie
 return aux;
 }
 
-//Funci髇 que muestra un mensaje de error.
+//Funci贸n que muestra un mensaje de error.
 
 void mensaje_de_error (){  
   
@@ -1151,7 +1151,7 @@ void mensaje_de_error (){
   system("cls");
 }
 
-//Funci髇 que busca la matriz de la Inteligencia Artificial en un fichero en la direcci髇 donde se encuetra alojado el ejecutable .exe.
+//Funci贸n que busca la matriz de la Inteligencia Artificial en un fichero en la direcci贸n donde se encuetra alojado el ejecutable .exe.
 
 void mod_file_matriz_ia(char a[12][12]){
 	
@@ -1189,7 +1189,7 @@ void mod_file_matriz_ia(char a[12][12]){
 -------------------------------------------------------------------------------       Funciones del Juego.         -----------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-//Funci髇 donde se producen el sistema de turnos, jugadas del Jugador y jugadas de la IA dotada de habilidad de jugar en casillas adyacentes a casillas aleatoriamente acertadas.
+//Funci贸n donde se producen el sistema de turnos, jugadas del Jugador y jugadas de la IA dotada de habilidad de jugar en casillas adyacentes a casillas aleatoriamente acertadas.
 
 void juego ( char mPlayer[12][12], char mIa[12][12] , char name[20]){
 	
@@ -1527,7 +1527,7 @@ void juego ( char mPlayer[12][12], char mIa[12][12] , char name[20]){
 	   
 }
 
-//Funci髇 que comprueba los resultados de las tiradas producidas por los jugadores.
+//Funci贸n que comprueba los resultados de las tiradas producidas por los jugadores.
 
 int comprobador_de_tirada ( int fila, int columna, char a[12][12], char jugada[12][12] ){
 
@@ -1616,7 +1616,7 @@ int comprobador_de_tirada ( int fila, int columna, char a[12][12], char jugada[1
    return resultado;
 }
 
-//Funci髇 que comprueba la puntuaci髇 obtenida en el juego con una contenida en un fichero.txt, y remplaza el fichero en caso de superar dicha puntuacion.
+//Funci贸n que comprueba la puntuaci贸n obtenida en el juego con una contenida en un fichero.txt, y remplaza el fichero en caso de superar dicha puntuacion.
 
 void comp_hscore ( long int score ){
 	
@@ -1672,7 +1672,7 @@ void comp_hscore ( long int score ){
 	
 }
 
-//Funci髇 que carga la m醲 puntuaci髇 obtenida en el juego desde un fichero.txt.
+//Funci贸n que carga la m谩x puntuaci贸n obtenida en el juego desde un fichero.txt.
 void carga_hscore(){
 	
     char aux [10];
@@ -1713,7 +1713,7 @@ void carga_hscore(){
     
 }
 
-//Funci髇 que genera matrices con los barquitos bien colocados.
+//Funci贸n que genera matrices con los barquitos bien colocados.
 
 void generador_de_matriz_IA ( char a[12][12]){
 	
